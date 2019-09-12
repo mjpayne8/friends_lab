@@ -100,7 +100,7 @@ class TestFriends < MiniTest::Test
   # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
   def test_add_friend__person2_adds_scrappy_doo
     add_friend(@person2, "Scrappy-Doo")
-    result = person2[:friends].length()
+    result = @person2[:friends].length()
     expected = 2
     assert_equal(expected, result)
   end
