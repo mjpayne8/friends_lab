@@ -18,7 +18,7 @@ def add_friend(person, friend)
 end
 
 def remove_friend(person, friend)
-    person[:friends].delete(friend)
+  person[:friends].delete(friend)
 end
 
 def total_money(people)
