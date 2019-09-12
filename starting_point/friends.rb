@@ -12,3 +12,7 @@ def likes_to_eat(person, food)
   end
   return false
 end
+
+def add_friend(person, friend)
+  person[:friends].push(friend)
+end
