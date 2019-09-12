@@ -99,7 +99,8 @@ class TestFriends < MiniTest::Test
   # (e.g. the function add_friend(@person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
   # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
   def test_add_friend__person2_adds_scrappy_doo
-    result = add_friend(@person2, "Scrappy-Doo").length()
+    add_friend(@person2, "Scrappy-Doo")
+    result = person2[:friends].length()
     expected = 2
     assert_equal(expected, result)
   end
