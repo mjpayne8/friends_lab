@@ -33,3 +33,11 @@ def loan(person_1, person_2, loan_amount)
   person_1[:monies] -= loan_amount
   person_2[:monies] += loan_amount
 end
+
+def favourite_food(people)
+  food_array = []
+  for person in people
+    food_array += person[:favourites][:snacks]
+  end
+  return food_array
+end

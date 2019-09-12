@@ -139,7 +139,11 @@ class TestFriends < MiniTest::Test
   end
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/snack arrays together)
-
+  def test_favourite_food__produce_concatenated_string
+    result = favourite_food(@people)
+    expected = ["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"]
+    assert_equal(expected, result)
+  end
 
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)
